@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    height: 15%;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 5px 10px;
+    /* border: 1px solid rgb(232, 232, 232); */
+}
+
+.logo img {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    width: 7%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#location-bar {
+    position: absolute;
+    /* display: flex; */
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+    border: 1px solid rgb(232, 232, 232);
+    background-color: white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    height: 25%;
+    width: 20%;
+    right: 60%;
+    top: 30%;
+}
+
+
+/* #location-bar input {
+    text-decoration: none;
+    box-sizing: border-box;
+
+} */
+
+.con {
+    position: absolute;
+    /* border: 5px black solid; */
+    /* display: inline-flex; */
+    left: 45%;
+    top: 40%;
+    width: 55%;
+    display: inline;
+    flex: wrap;
+    /* height: 30%; */
+}
+@media (max-width:920px) {
+    .con{
+        display: block;
+    }
+    
+}
+.op a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin: 3%;
+    /* right: 10px; */
+    color: black;
+    font-weight: 6px;
+    font-size: 1rem;
+}
+
+.op a img {
+    width: 15px;
+}
+
+#lines{
+    /* height: 5%;  */
+    width: 3%; 
+}
+.filter {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 80px;
+    top: 100px;
+    /* border: 2px solid red; */
+    border-bottom: 1px solid black;
+    margin-left: 15px;
+}
+
+.filter a img {
+    /* position: relative; */
+    top: 30px;
+    width: 13px;
+    left: 4%;
+}
+
+.filter a {
+    position: relative;
+    text-decoration: none;
+    display: inline;
+    left: 7%;
+    top: 30px;
+    font-size: medium;
+    border: 1PX solid rgb(232, 232, 232);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.food {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    float: left;
+    width: 90%;
+    top: 80%;
+    height: 100%;
+    justify-content: space-evenly;
+    justify-items: center; 
+    margin-left:65px ;
+}
+
+
+/* Item card container */
+.item-card {
+    width: 80%;
+    height: 85%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+
+
+}
+
+/* Item image */    
+.item-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Item title */
+.item-card .item-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Item description */
+.item-card .item-description {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Item info container */
+.item-card .item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Item price */
+.item-card .item-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Item actions */
+.item-card .item-actions {
+    display: flex;
+    align-items: center;
+}
+
+/* Add to Cart button */
+.item-card .btn-add-to-cart,
+.item-card .btn-view-details {
+    padding: 8px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/* Hover effect on buttons */
+.item-card .btn-add-to-cart:hover,
+.item-card .btn-view-details:hover {
+    background-color: #0056b3;
+}
+
+/* sidnav */
+.sidenav {
+    /* border: 5px solid red; */
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    top: 183px;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+}
+
+h2 {
+    text-transform: capitalize;
+    /* border: 5px solid red; */
+    margin-left: 110px;
+    width: 200px;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.categari {
+    position: absolute;
+    /* border: 5px solid green; */
+    align-items: center;
+    display: flex;
+    height: 248px;
+    margin-left: 100px;
+    width: 85%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}
+
+.cat {
+    margin: 20px;
+    height: 180px;
+    width: 250px;
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.cat a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: x-large;
+    text-transform: capitalize;
+}
+
+.cat a img {
+    width: 130px;
+    height: 130px;
+    justify-items: center;
+    border-radius: 50%;
+}
+
+/* FOOTER */
+
+.foot {
+
+    display: block;
+}
+
+.footer {
+    background-color:beige;
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 320%;
+    display: flex;
+    float: inline-end;
+    justify-content: center;
+
+}
+
+h1 {
+    position: absolute;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 45%;
+    height: 30px;
+    /* border: 2px solid black; */
+}
+
+.social {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    /* left: 42%; */
+    top: 30%;
+    /* border: 2px solid black; */
+}
+
+.con1,
+.con2,
+.con3 {
+    /* border: 2px solid black; */
+    width: 25px;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.con4 {
+    justify-content: center;
+    text-align: center;
+    background-color: beige;
+    position: absolute;
+    left: 38%;
+    float: inline-end;
+    /* border: 2px solid black; */
+    top: 80%;
+
+}
+
+.con4 p {
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    display: block;
+}

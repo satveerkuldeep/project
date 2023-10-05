@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website with Location Bar</title>
+  <style>
+    .location-bar {
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+    
+    .location-bar input[type="text"] {
+      width: 80%;
+      padding: 5px;
+      font-size: 16px;
+    }
+    
+    .location-bar button {
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="location-bar">
+    <input type="text" id="url-input" placeholder="Enter URL">
+    <button onclick="navigate()">Go</button>
+  </div>
+  
+  <!-- Rest of your website content goes here -->
+  
+  <script>
+    function navigate() {
+      var url = document.getElementById("url-input").value;
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
