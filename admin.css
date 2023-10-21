@@ -1,0 +1,140 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+.wrapper {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 1px solid black;
+
+position:static;
+}
+
+.header ul {
+    list-style-type: none;
+}
+
+.header ul li {
+    display: inline;
+    margin: 1%;
+}
+
+.header ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff6b81;
+}
+
+.header ul li a:hover {
+    color: #ff4757;
+}
+
+/* css for table */
+
+.tbl {
+    width: 100%;
+    text-align: left;
+
+}
+
+.tbl tr th {
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.tbl tr td {
+    padding: 10px;
+}
+
+.btn-primry {
+    background-color: #5352ed;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.btn-primry:hover {
+    background-color: #3742fa;
+}
+
+.btn-secondry {
+    background-color: #7bed9f;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.btn-secondry:hover {
+    background-color: #2ed573;
+}
+
+.btn-therd {
+    background-color: #ff6b81;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-therd:hover {
+    background-color: #ff4757;
+}
+
+/* css for add admin */
+
+.tbl-30 {
+    width: 30%;
+}
+
+/* css for main content */
+.main-content {
+    background-color: #dfe4ea;
+    padding: 3% 0;
+}
+
+.con {
+    width: 20%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+    float: none;
+}
+
+/* css for footer */
+
+.center {
+    text-align: center;
+}
+
+.footer {
+    background-color: #ff4757;
+    color: white;
+}
+
+/* css for login  */
+
+.login {
+    border: 1px solid black;
+    width: 30%;
+    margin: 10% auto;
+    padding: 2%;
+    text-align: center;
+    /* justify-content: center; */
+    background-color: #f1f2f6;
+}
