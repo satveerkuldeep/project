@@ -1,54 +1,54 @@
-<?php
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
+<?php include "partials/header.php"; ?>
 
-
-    include('config.php');
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-   $sql = "SELECT * FROM `info` WHERE email = '$email' AND  password=' $password'";
-    $result = mysqli_query($con,$sql);
-    if($result){
-   
-        $num = mysqli_num_rows($result);
-        if($num > 0){
-     
-            // echo "login success";
-            header('location:desbord.php');
-           
-        }else{
-            echo "login invalide";
-            
+<div class="main-content">
+    <div class="wrapper">
+        <h1>Deshboard</h1>
+        <br>
+        <?php
+        if (isset($_SESSION['login'])) {
+            echo  $_SESSION['login'];
+            unset($_SESSION['login']);
         }
-    }
-}
+        ?>
+        <br><br>
+        <div class="con">
+            <h1>5</h1>
+            <br>
+            category
+        </div>
+        <div class="con">
+            <h1>5</h1>
+            <br>
+            category
+        </div>
+
+        <div class="con">
+            <h1>5</h1>
+            <br>
+            category
+        </div>
+
+        <div class="con">
+            <h1>5</h1>
+            <br>
+            category
+        </div>
+
+        <div class="con">
+            <h1>5</h1>
+            <br>
+            category
+        </div>
+
+        <div class="con">
+            <h1>5</h1>
+            <br>
+            category
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
 
 
 
-
-?>
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-
-<center><h1>SIGNUP FORM</h1>
-
-
-    <form action="" method="POST">
-       
-        Email:<input type="email" name="email"><br><br>
-        Password:<input type="password" name="password"><br><br>
-        <button type="submit" name="submit">Login</button>
-    </form>
-    <a href="registration.php">Signup</a>
-    </center> 
-</body>
-</html>
+<?php include "partials/footer.php"; ?>

@@ -1,9 +1,5 @@
 <?php
-session_start();
-session_destroy();
-header('location:index.php');
-
-
-
-
+ include("../config/constant.php"); 
+ session_destroy(); 
+ header('location:'.siteurl.'admin/login.php');
 ?>
